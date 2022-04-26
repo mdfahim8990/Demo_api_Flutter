@@ -9,7 +9,7 @@ class HomePage  extends StatefulWidget {
 }
 class _HomePageState extends State<HomePage> {
 var Data;
-var url =Uri.parse (' https://reqres.in/api/users?page=1');
+var url =Uri.parse ('https://reqres.in/api/users?page=1');
   Future<void> getData()async{
      http.Response response = await http.get(url);
     setState(() {
